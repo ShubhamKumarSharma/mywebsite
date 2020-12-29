@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <title>
+        website design using html and css
+
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\HP\Desktop\images\logo1.jpg">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">phone</a></li>
+                    <li><a href="#">accesseries</a></li>
+                    <li><a href="#">cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="information">
+        <div class="overlay"></div>
+        <img src="C:\Users\HP\Desktop\images\mobile2.jpg" class="mobile">
+
+        <div id="circle">
+            <div class="feature one">
+                <img src="C:\Users\HP\Desktop\images\camera.jpg">
+
+                <div>
+                    <h1> camera</h1>
+                    <p>48mp,wide angle lens</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="C:\Users\HP\Desktop\images\processor1.jpg">
+                <div>
+                    <h1> processor</h1>
+                    <p>snapdragon 720G&alexa hands-free</octa-core>
+                    </p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="C:\Users\HP\Desktop\images\display.jpg">
+                <div>
+                    <h1>display</h1>
+                    <p>16.9cm(6.67)FHD+dot display</p>
+                </div>
+            </div>
+            <div class="feature fourth">
+                <img src="C:\Users\HP\Desktop\images\battery.jpg">
+                <div>
+                    <h1> battery</h1>
+                    <p>5020mAh battery</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="controls">
+        <img src="C:\Users\HP\Desktop\images\uparrow.jpg" id="upbtn">
+        <h3>features</h3>
+        <img src="C:\Users\HP\Desktop\images\downarrow.jpg" id="downbtn">
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick = function ()
+         {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+        downbtn.onclick = function () 
+        {
+            rotatesum = rotatevalue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+</body>
+
+</html>
